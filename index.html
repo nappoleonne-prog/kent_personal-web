@@ -1,0 +1,281 @@
+<body>
+  <!-- Falling stars background -->
+  <div class="falling-stars">
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+    <div class="star"></div>
+  </div>
+
+  
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode / Light Mode Toggle</title>
+    <style>
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<body class="light-mode">
+    <h1>Toggle Dark Mode / Light Mode</h1>
+    <button class="toggle-button" onclick="toggleMode()">Switch to Dark Mode</button>
+    <!-- Dark/Light Mode Toggle Button -->
+<button class="toggle-button" onclick="toggleMode()">
+  <i id="mode-icon" class="fa-solid fa-moon"></i>
+
+<a href="https://www.facebook.com/share/179RDFLiR1/" target="_blank" class="social-icon">
+  <i class="fab fa-facebook-f"></i>
+
+  
+</a>
+
+</button>
+  
+
+
+    <script>
+function toggleMode() {
+  const body = document.body;
+  const icon = document.getElementById('mode-icon');
+
+  // Toggle dark and light mode classes
+  body.classList.toggle('dark-mode');
+  body.classList.toggle('light-mode');
+
+  // Change the icon based on the current mode
+  if (body.classList.contains('dark-mode')) {
+    icon.classList.replace('fa-moon', 'fa-sun');
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon');
+  }
+}
+</script>
+
+
+    <script>
+        function toggleMode() {
+            const body = document.body;
+            const button = document.querySelector('.toggle-button');
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            button.textContent = body.classList.contains('dark-mode') ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+        }
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FONT-AWESOME -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+      <!-- MAIN CSS -->   
+     <link rel="stylesheet" href="style.css">
+    <title>Personal Website</title>
+</head>
+<body>
+   
+    <input type="checkbox" id="toggle">
+
+
+     <!-- HEADER DESIGN -->
+     <header class="header"> 
+        <a href="#" class="logo">Jagiya</a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+             <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </HEADER>
+
+     <!-- HOME SECTION DESIGN -->
+      <section class="home" id="home">
+        <dic class="home-content">
+            <h3>Hi I'am</h3>
+            <h1>Kent Durato</h1>
+            <h3>And i am a <span>BSIT student from Aces Polythecnic College inc.</span></h3>
+            <p>I'm a student and web developer passionate about creating responsive, user-friendly websites while continuously learning and improving my skills.</p>
+            <div class="social media">
+                <a href="https://www.facebook.com/share/1JVTMNaJcW/"></a>
+            
+             </div>
+             <a href="#" class="btn">Download CV</a>
+             <div>
+                 
+                <div class="home-igm">
+                    <img src="background.jfif" alt="">
+                </div>
+
+      </section>
+
+
+      <!-- ABOUT SECTION DESIGN -->
+       <section class="about" id="about">
+        <div class="about-img">
+            <img src="background.jfif" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About<span>Me</span></h2>
+            <h3>BSIT Student</h3>
+            <p>I am an 18-year-old student who is passionate about what I do. I enjoy learning new things every day and constantly strive to grow both academically and personally. Whether it’s exploring new subjects or working on creative projects, I put my heart into everything I do because I truly love the journey of learning and self-improvement.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+       </section>
+
+       <!-- Skills SECTION DESIGN -->
+        <section class="Skills" id="skills">
+            <h2 class="heading">My <span>skills</span></h2>
+
+            <div class="skills-container">
+                <div class="skills-box">
+                   <i class="fa-solid fa-code"></i>
+                   <h3>Web Development</h3>
+                   <p>MATUG</p>
+                   <a href="" class="btn">Read More</a> 
+                </div>
+
+                <div class="skills-box">
+                   <i class="fa-solid fa-palette"></i>
+                   <h3>UI/UX Designing</h3>
+                   <p>MATUG</p>
+                   <a href="" class="btn">Read More</a> 
+                </div>
+
+                <div class="skills-box">
+                   <i class="fa-brands fa-android"></i>
+                   <h3>App Development</h3>
+                   <p>MATUG</p>
+                   <a href="" class="btn">Read More</a> 
+                </div>
+            </div>
+        </section> 
+
+        <!-- PROJECT SECTION DESIGN -->
+         <SEction class="project" id="Project">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+
+            <di class="Projects-container">
+                <div class="Project-box">
+                    <img src="Soothing-nature-backgrounds-1.jpg" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="ai-generated-nature-plant-green-bouquet-sunlit-ai-generated-photo.jpg" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                <div>
+                     
+                    <div class="Project-box">
+                    <img src="pngtree-nature-forest-sun-ecology-image_2256183.jpg" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="Project-box">
+                    <img src="premium_photo-1675198764473-30434364c8b6.jfif" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+
+                    <div class="Project-box">
+                    <img src="1.webp" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+
+                    <div class="Project-box">
+                    <img src="nature-background-free-image.webp" alt="">
+                    <div class="Projects-layer">
+                        <h4>Web Design</h4>
+                        <p>Coming soon</p>
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </div>
+         </SEction>
+
+        
+
+               <!-- CONTACT SECTION DESIGN -->
+                <section class="Contact" id="contact">
+                    <h2 class="heading">Contact<span>Me</span></h2>
+
+                     <Form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Full Name">
+                             <input type="email" placeholder="Email Adddress">
+                        </div>
+
+                        <div class="input-box">
+                            <input type="Number" placeholder="Mobile Number">
+                             <input type="Text" placeholder="Email Subject">
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type="Submit" value="Send Message" class="btn">
+                     </Form>
+                            </div>
+                        </div>
+                    </dic>
+                </section>
+                   <!-- FOOTER DESIGN -->
+
+                   <footer class="footer">
+                    <div class="footer-text">
+                        <p> Built with Smiling face &copy; 2025 Kent Nappoleonne | All Rights Reserved.</p>
+                    </div>
+
+                    <div class="footer-iconTop">
+                        <a href="#Home"><i class="fa-solid fa-angle-up"></i></a>
+                    </div>
+                   </footer>
+
+                      <!-- MAIN JS -->
+
+
+    <script src="main.js"></script>
+</body>
+</html>
